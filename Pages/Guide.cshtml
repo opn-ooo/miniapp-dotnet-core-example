@@ -57,7 +57,54 @@
 
     <section>
         <h2>Include</h2>
-        <p>Inject SDK into application</p>
+        <p>Use webpack to transpile our application JavaScript.</p>
+        <ol>
+            <li>
+                <p>Create <code>webpack.config.js</code> in the root of the project.</p>
+            </li>
+            <li>
+                <p>Put basic configuration for our application.</p>
+                <pre>
+                    <code>
+const path = require("path")
+
+module.exports = {
+  entry: "./app/index.js",
+  output: {
+    path: path.resolve(__dirname, "wwwroot", "js"),
+    filename: "app.js",
+    publicPath: "/",
+  },
+  resolve: {
+    extensions: [".js"],
+  },
+  module: {
+    rules: [],
+  },
+  plugins: [],
+}
+                    </code>
+                </pre>
+                <p>This configuration transpiles <code>./app/index.js</code> into <code>./wwwroot/js/app.js</code></p>
+            </li>
+            <li>
+                <p>
+                    Create <code>./app/index.js</code> to be the entrypoint of our application.
+                </p>
+            </li>
+            <li>
+                <p>
+                    Import SDK using import syntax <code>import SDK from 'gcp-miniappkit-jssdk'</code>
+                </p>
+                <pre>
+                    <code>
+import SDK from 'gcp-miniappkit-jssdk'
+
+console.log(SDK)
+                    </code>
+                </pre>
+            </li>
+        </ol>
     </section>
 
     <section>
