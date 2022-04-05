@@ -13,6 +13,46 @@
 
     <section>
         <h2>Install</h2>
+        <p>We will use NPM package manager to manage dependency.</p>
+        <ol>
+            <li>
+                <p>
+                    Initilize package.json
+                </p>
+                <p>
+                    <code>npm init -y</code>
+                </p>
+                <p>This command creates a <code>package.json</code> file in your project root.</p>
+            </li>
+            <li>
+                <p>Install webpack</p>
+                <p>
+                    <code>npm i -D webpack webpack-cli</code>
+                </p>
+                <p>This command creates and installs <code>webpack</code> and <code>webpack-cli</code> to your project.
+                </p>
+            </li>
+            <li>
+                <p>Install GCP Mini-app JS SDK</p>
+                <p>
+                    <code>npm i gcp-miniappkit-jssdk</code>
+                </p>
+                <p>Now, Your <code>package.json</code> should contain these dependencies</p>
+                <pre>
+                    <code>
+"devDependencies": {
+    "webpack": "^5.71.0",
+    "webpack-cli": "^4.9.2"
+},
+"dependencies": {
+    "gcp-miniappkit-jssdk": "^0.4.0"
+}
+                    </code>
+                </pre>
+                <p><i>Note that the version number might not be the same.</i></p>
+                <p>The preparation for using a webpack to build GCP Mini-app JS SDK is completed.</p>
+            </li>
+        </ol>
     </section>
 
     <section>

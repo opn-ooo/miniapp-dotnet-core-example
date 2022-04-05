@@ -1,0 +1,28 @@
+{
+  "name": "miniapp-dotnet-core-example",
+  "private": true,
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/opn-ooo/miniapp-dotnet-core-example.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/opn-ooo/miniapp-dotnet-core-example/issues"
+  },
+  "homepage": "https://github.com/opn-ooo/miniapp-dotnet-core-example#readme",
+  "devDependencies": {
+    "webpack": "^5.71.0",
+    "webpack-cli": "^4.9.2"
+  },
+  "dependencies": {
+    "gcp-miniappkit-jssdk": "^0.4.0"
+  }
+}
