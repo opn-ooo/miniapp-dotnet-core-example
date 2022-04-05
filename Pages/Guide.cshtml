@@ -109,6 +109,27 @@ console.log(SDK)
 
     <section>
         <h2>Example</h2>
-        <p>Initialize SDK</p>
+        <p>In this section, we will use SDK to get user information (in mock mode).</p>
+        <ol>
+            <li>
+                <p>Init SDK</p>
+                <pre>
+                    <code>
+SDK.init("mock")
+                    </code>
+                </pre>
+            </li>
+            <li>
+                <p>Get user information and log to the console.</p>
+                <pre>
+                    <code>
+SDK.getUserInfo().then((user) => {
+  console.log(user)
+})
+                    </code>
+                </pre>
+            </li>
+        </ol>
+        <p>You can see the whole code in <code>app/index.js</code></p>
     </section>
 </article>

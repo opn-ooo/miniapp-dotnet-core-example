@@ -1,3 +1,7 @@
 import SDK from 'gcp-miniappkit-jssdk'
 
-console.log(SDK)
+SDK.init("mock")
+
+SDK.getUserInfo().then((user) => {
+  console.log(user)
+})

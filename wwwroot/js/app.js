@@ -16,7 +16,7 @@
   \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var gcp_miniappkit_jssdk__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! gcp-miniappkit-jssdk */ \"./node_modules/gcp-miniappkit-jssdk/dist/index.modern.js\");\n\n\nconsole.log(gcp_miniappkit_jssdk__WEBPACK_IMPORTED_MODULE_0__[\"default\"])\n\n\n//# sourceURL=webpack://miniapp-dotnet-core-example/./app/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var gcp_miniappkit_jssdk__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! gcp-miniappkit-jssdk */ \"./node_modules/gcp-miniappkit-jssdk/dist/index.modern.js\");\n\n\ngcp_miniappkit_jssdk__WEBPACK_IMPORTED_MODULE_0__[\"default\"].init(\"mock\")\n\ngcp_miniappkit_jssdk__WEBPACK_IMPORTED_MODULE_0__[\"default\"].getUserInfo().then((user) => {\n  console.log(user)\n})\n\n\n//# sourceURL=webpack://miniapp-dotnet-core-example/./app/index.js?");
 
 /***/ }),
 
