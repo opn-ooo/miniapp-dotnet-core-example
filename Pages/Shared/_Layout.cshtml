@@ -43,7 +43,14 @@
 
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="~/js/app.js" asp-append-version="true"></script>
+    @* <script src="~/js/app.js" asp-append-version="true"></script> *@
+
+    <script src="~/lib/gcp-miniappkit-jssdk/dist/index.umd.js"></script>
+    <script type="text/javascript">
+        let sdk = new window.gcpMiniappkitJssdk.SDK();
+
+        sdk.init("mock");
+    </script>
 
     @await RenderSectionAsync("Scripts", required: false)
 </body>
